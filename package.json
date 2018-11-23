@@ -1,5 +1,6 @@
 {
  "name": "server-app-membership",
+ "version": "1.0.0",
  "scripts": {
     "test": "mocha"
   },
