@@ -1,11 +1,19 @@
 var should= require("should");
+var User = require('../models/user');
+var assert= require("assert");
 
-describe("test1", function(){
+describe("User", function(){
     
-    describe("memebership test 1 ", function(){
-        it("is all normal", function(){
-            assert.ok(1==1);
+    describe("defaults ", function(){
+        var user ={};
+
+        before(function(){
+            user = new User({email:"test@gmail.com"});
         });
+
+        it("email is test@gmail.com");
+        it("has authetication token ");
+        it("has timeout period ");
     });
 
 
