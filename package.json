@@ -6,9 +6,12 @@
   "test": "mocha"
  },
  "dependencies": {
+  "dotenv": "^6.1.0",
   "hapi": "^17.8.1",
   "hoek": "^6.0.4",
   "moment": "^2.22.2",
+  "pg": "^7.7.1",
+  "pg-hstore": "^2.3.2",
   "sequelize": "^4.41.2"
  },
  "devDependencies": {

@@ -4,14 +4,14 @@ const Hapi = require('hapi');
 const Hoek = require('hoek');
 const Settings = require('./config');
 const Routes = require('./lib/route');
-const Models = require('./lib/models');
+const Models = require('./models');
 
 const server = new Hapi.Server({ port: Settings.port });
 
 server.route(Routes);
 
-const init = async () => {
-  Models.sequelize.sync().then(() => {
+const init = () => {
+  Models.sequelize.sync().then(async ()  => {
     await server.start();
     console.log(`Server running at: ${server.info.uri}`);
   });

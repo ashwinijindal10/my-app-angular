@@ -7,8 +7,14 @@ module.exports = {
   // Environment-dependent settings
   development: {
     db: {
-      dialect: 'localhost',
-      storage: ':memory:'
+      dialect:'postgres',
+      host: 'ec2-50-16-218-45.compute-1.amazonaws.com',
+      database: 'dbkriq3mslvv6f',
+      user :'hosoecpjdvknnd',
+      password :'Outg41YDXG5Bv_aPORUnI3U0dF',
+      "dialectOptions": {
+        "ssl": true
+    }
     }
   },
   production: {
