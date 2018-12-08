@@ -1,6 +1,6 @@
 {
  "name": "server-app-membership",
- "description": " get info https://www.sitepoint.com/node-js-mvc-application/",
+ "description": " get info https://www.sitepoint.com/node-js-mvc-application/ ,https://www.sitepoint.com/build-apps-services-with-hapi-js/",
  "version": "1.0.0",
  "scripts": {
   "test": "mocha"
