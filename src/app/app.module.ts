@@ -1,35 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FlexLayoutModule} from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MyaddressComponent } from './myaddress/myaddress.component';
-import { MatInputModule, MatButtonModule, MatSelectModule, MatRadioModule, MatCardModule, MatGridListModule, MatMenuModule, MatIconModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MyaddressComponent } from './myaddress/myaddress.component';
 import { MydashboardComponent } from './mydashboard/mydashboard.component';
-import { LayoutModule } from '@angular/cdk/layout';
+import { MaterialModule } from './material.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyaddressComponent,
-    MydashboardComponent
+    MydashboardComponent,
+    DashboardComponent,
+    WelcomeComponent
   ],
   imports: [
+    MaterialModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatCardModule,
     ReactiveFormsModule,
-    MatGridListModule,
-    MatMenuModule,
-    MatIconModule,
-    LayoutModule
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
