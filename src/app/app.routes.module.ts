@@ -8,7 +8,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 const routes: Routes = [
   {path: '', component: WelcomeComponent},
   {path: 'dashboard', component: DashboardComponent},
-  { path: 'dashboard', component: MydashboardComponent },
   { path: 'add-address', component: MyaddressComponent }
 ];
 
