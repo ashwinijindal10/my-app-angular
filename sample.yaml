@@ -1,0 +1,66 @@
+definition:
+  '@program': A320
+  '@serie': SA-A321-200
+  '@partnumber': SA-A321-200
+  '@sections': ''
+  '@atas': ''
+  '@atalevel': ''
+  '@aps': 09929
+  filter:
+    box:
+      '@xmin': 35264
+      '@xmax': 36264
+      '@ymin': -315
+      '@ymax': 685
+      '@zmin': -2427
+      '@zmax': -1427
+  '@completeds': false
+  '@stopatds': true
+  '@priority': W
+  view: ADF/ADAP
+  '@ps_format': SPS
+  '@additional_fields': PDMTYPE;VERSION;WRVIEW;LOCATION;3DFILEPATH
+'@geometry_format': CGR
+'@exact_geometry_format': EXACT
+'@exact_ps_format': CATProduct
+'@low_geometry_level': 2
+'@high_geometry_level': 1
+'@fine_geometry_level': 0
+'@server': http://localhost:9001
+'@client': NOVO
+'@low_geo_url_template': '*server/*program/NUMBERS/{partnumber}/CAD?format=*geometry_format&wr={priority}&generatedview=*priority&dataorigin=MASTER&version={version}&degradationlevel=*low_geometry_level&client=*client'
+'@high_geo_url_template': '*server/*program/NUMBERS/{partnumber}/CAD?format=*geometry_format&wr={priority}&generatedview=*priority&dataorigin=MASTER&version={version}&degradationlevel=*high_geometry_level&client=*client'
+'@fine_geo_url_template': '*server/*program/NUMBERS/{partnumber}/CAD?format=*geometry_format&wr={priority}&generatedview=*priority&dataorigin=MASTER&version={version}&degradationlevel=*fine_geometry_level&client=*client'
+ps_url: '*server/*program/NUMBERS/*partnumber/BOOMSTRUCT?format=*ps_format&stopatds=*stopatds&completeds=*completeds&boxing=*xmin;*ymin;*zmin;*xmax;*ymax;*zmax&aps=*aps&serie=*serie&wr=*priority&sections=*sections&atas=*atas&ataslevel=*atalevel&dataorigin=MASTER&additionalfields=*additional_fields&client=*client'
+exact_ps_url: '*server/*program/NUMBERS/{partnumber}/EXACTPS?dataorigin=MASTER&wr={priority}&version={version}&client=*client'
+exact_geo_url: '*server/*program/NUMBERS/{partnumber}/CAD?format=*exact_geometry_format&wr={priority}&version={version}&dataorigin=MASTER&client=*client'
+geo_url: '*low_geo_url_template'
+misc:
+  Creator: De2mat
+  Date: 07/11/2019 13:00:00
+action:
+  multithread: 50
+  load_ps: true
+  load_geometry: true
+  open_in: new_window
+  Output: NOVO
+marker:
+  name: IUID000417875
+  x: 35764
+  y: 185
+  z: -1927
+  type: annotation
+  annotation_text: IUID000417875 In Progress
+cameras: 
+- name: IUID000417875_AV000428411
+  origin_x: 35076.7109375
+  origin_y: 55.1258697509766
+  origin_z: -1941.26123046875
+  Sight_x: 0.910906374454498
+  Sight_y: 0.373777240514755
+  Sight_z: -0.174757957458496
+  Up_x: 0.161676064133644
+  Up_y: 0.0663414299488068
+  Up_z: 0.984611332416534
+  angle: 26.5599994659424
+  near_clipping_plane: 265.709533691406
